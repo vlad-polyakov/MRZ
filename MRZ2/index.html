@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MRZ LAB 2</title>
+</head>
+<body>
+<script src="chart.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<h1>Вариант 2</h1>
+<p>c[i][j] = ∑<sub>k</sub>d[k][i][j]</p>
+<p>d[k][i][j] = (|a[i][k]|<|b[k][j]|)?(a[i][k]*b[k][j]):(a[i][k]*b[k][j]=0)?(a[i][k]+b[k][j]):(a[i][k]/b[k][j]+b[k][j]/a[i][k])</p>
+<p>i=0...p;		j=0...q;	k=0...m</p>
+<table border="1px" bordercolor="black">
+    <tr>
+        <td>
+            <p>m=<input type="text" id="inputM" value="2"></p>
+            <p>p=<input type="text" id="inputP" value="2"></p>
+            <p>q=<input type="text" id="inputQ" value="2"></p>
+            <p>n=<input type="text" id="inputN" value="3"></p>
+        </td>
+        <td>
+            <p >t1=<input type="text" id="inputT1" value="1"> - сложение</p>
+            <p >t2=<input type="text" id="inputT2" value="1"> - деление</p>
+            <p >t3=<input type="text" id="inputT3" value="1"> - произведение</p>
+            <p >t4=<input type="text" id="inputT4" value="1"> - модуль</p>
+            <p >t5=<input type="text" id="inputT5" value="1"> - сравнение</p>
+        </td>
+    </tr>
+</table>
+<p><button onclick="main()">start</button></p>
+<div id="AllTables"></div>
+<style>
+    .Charts {
+        width: 1100px;
+        height: 700px;
+    }
+</style>
+</body>
+</html>

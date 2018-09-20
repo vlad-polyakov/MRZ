@@ -1,0 +1,14 @@
+button.mainBtn {
+    font-weight: bold;
+    color: white;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 5px;
+    background: rgb(40, 90, 150);
+    transition: 0.2s;
+}
+button.mainBtn:hover {
+  background: rgb(50, 100, 200); 
+}
+button.mainBtn:active {
+    background: rgb(111, 229, 113);
+}

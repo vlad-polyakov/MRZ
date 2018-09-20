@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MRZ L1</title>
+    <script src="JS/logic.js"></script>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+<div id="optionsDiv">
+    <p>
+        <h3> Вариант 11. Алгоритм вычисления целочисленного частного пары шестиразрядных чисел делением с восстановлением частичного остатка. </h3>
+        <strong>Первые элементы пар:</strong> &nbsp&nbsp <input id="FirstNums" pattern="^[1-9]([0-9]+)?(,(\s+)?[1-9]([0-9]+)?){0,}$"><br>
+    </p>
+    <p>
+        <strong>Вторые элементы пар:</strong> &nbsp&nbsp&nbsp <input id="SecondNums" pattern="^[1-9]([0-9]+)?(,(\s+)?[1-9]([0-9]+)?){0,}$"><br>
+    </p>
+    <p>
+        <strong>Время на этап</strong> (в тактах): &nbsp <input id="Time" pattern="^[0-9]+(.[0-9]+)?$"><br>
+    </p>
+    <button class="mainBtn" onclick="letItGo()">Старт</button>
+</div>
+<br>
+<div id="tableDiv">
+    <table id='Table' border='1'>
+    </table>
+</div>
+</body>
+</html>
